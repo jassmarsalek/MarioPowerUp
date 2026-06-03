@@ -1,4 +1,4 @@
-# MarioPowerUp
+#MarioPowerUp
 Mario Power-Up State Machine
 
 This project will simulate Mario's power up system using a finite state machine on a Raspberry Pi. The syste changes Mario's form based on button inputs that represent collecting power-ups or taking damage.
