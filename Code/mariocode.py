@@ -1,14 +1,15 @@
+#AI was used to develop and to help build the code.
 from gpiozero import Button, LED
 from signal import pause
-
+#inputs
 mushroom_button = Button(17)
 fireflower_button = Button(27)
 enemyhit_button = Button(22)
-
+#outputs
 small_led = LED(18)
 super_led = LED(23)
 fire_led = LED(24)
-
+#All states. AI helped define them. I also had the AI explain what it did.
 SMALL = "Small Mario"
 SUPER = "Super Mario"
 FIRE = "Fire Mario"
