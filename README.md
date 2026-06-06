@@ -2,6 +2,11 @@
 Mario Power-Up State Machine
 
 This project will simulate Mario's power up system using a finite state machine on a Raspberry Pi. The system changes Mario's form based on button inputs that represent collecting power-ups or taking damage.
+### How it Works
+The system starts in the Small Mario state. Pressing the Mushroom Button changes Mario from Small Mario to Super Mario. Pressing the Fire Flower Button changes Mario from either Small Mario or Super Mario to Fire Mario. Pressing the Enemy Hit Button causes Mario to lose one power level. If Mario is in the Fire Mario state, he changes to Super Mario. If Mario is in the Super Mario state, he changes to Small Mario.
+
+Each state is represented by a different LED. The Blue LED indicates Small Mario, the Red LED indicates Super Mario, and the Orange LED indicates Fire Mario. Only one LED is active at a time, showing Mario's current state.
+
 ### States
 Small Mario (starting state)
 Super Mario
