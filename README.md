@@ -20,13 +20,13 @@ Orange LED (Represents Fire Mario)
 The active LED changes depending on the state Mario is in. The program will continuously check the button inputs and updates the state and outputs.
 ### State Diagram
 <img width="3024" height="4032" alt="IMG_4934" src="https://github.com/user-attachments/assets/acb06735-662e-4a3a-9e35-8acd2ed395b9" />
-###Inputs
+### Inputs
 
 Mushroom Button (GPIO 17) → Changes Small Mario to Super Mario
 Fire Flower Button (GPIO 27) → Changes Small Mario or Super Mario to Fire Mario
 Enemy Hit Button (GPIO 22) → Changes Fire Mario to Super Mario or Super Mario to Small Mario
 
-###Outputs
+### Outputs
 
 Small Mario LED (GPIO 18) → Turns on when Mario is in the Small Mario state
 Super Mario LED (GPIO 23) → Turns on when Mario is in the Super Mario state
