@@ -12,7 +12,7 @@ Mushroom Button (Changes Mario from Small Mario to Super Mario)
 Fire Flower Button (Changes Mario from Super/Small Mario to Fire Mario)
 Enemy Hit Button (Causes Mario to lose a power level)
 
-###Outputs
+### Outputs
 Blue LED (Represents Small Mario)
 Red LED (Represents Super Mario)
 Orange LED (Represents Fire Mario)
