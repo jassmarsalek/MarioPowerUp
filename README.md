@@ -18,3 +18,4 @@ Red LED (Represents Super Mario)
 Orange LED (Represents Fire Mario)
 
 The active LED changes depending on the state Mario is in. The program will continuously check the button inputs and updates the state and outputs.
+<img width="4032" height="3024" alt="IMG_4934" src="https://github.com/user-attachments/assets/92ac54d3-d6fb-4174-96b1-d3665b17d3a9" />
