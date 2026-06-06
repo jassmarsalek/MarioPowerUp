@@ -9,13 +9,13 @@ enemyhit_button = Button(22)
 small_led = LED(18)
 super_led = LED(23)
 fire_led = LED(24)
-#All states. AI helped define them. I also had the AI explain what it did.
+#All states. AI helped define them. I also had the AI explain what to us the purpose.
 SMALL = "Small Mario"
 SUPER = "Super Mario"
 FIRE = "Fire Mario"
 
 state = SMALL
-
+ # AI helped explain how outputs should change based on the current state.
 def update_outputs():
     if state == SMALL:
         small_led.on()
@@ -45,7 +45,7 @@ def fireflower_pressed():
 
     if state == SMALL or state == SUPER:
         state = FIRE
-
+# The AI suggested that we add another input for the Small Mario to turn it into Fire Mario. It told us to use an or statement.
     update_outputs()
 
 def enemyhit_pressed():
