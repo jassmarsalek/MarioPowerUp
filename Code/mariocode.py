@@ -1,5 +1,7 @@
 #AI was used to develop and to help build the code.
+# AI helped explain the purpose of the Button and LED classes and why we needed it.
 from gpiozero import Button, LED
+# AI helped explain that pause() keeps the program running.
 from signal import pause
 #inputs
 mushroom_button = Button(17)
@@ -9,7 +11,7 @@ enemyhit_button = Button(22)
 small_led = LED(18)
 super_led = LED(23)
 fire_led = LED(24)
-#All states. AI helped define them. I also had the AI explain what to us the purpose.
+# All states. AI helped define the states and explain their purpose.
 SMALL = "Small Mario"
 SUPER = "Super Mario"
 FIRE = "Fire Mario"
@@ -42,10 +44,12 @@ def mushroom_pressed():
 
 def fireflower_pressed():
     global state
-
+    # AI suggested using the OR operator so that both Small Mario
+    # and Super Mario can transition to Fire Mario when the
+    # Fire Flower button is pressed.
     if state == SMALL or state == SUPER:
         state = FIRE
-# The AI suggested that we add another input for the Small Mario to turn it into Fire Mario. It told us to use an or statement.
+
     update_outputs()
 
 def enemyhit_pressed():
@@ -63,5 +67,6 @@ fireflower_button.when_pressed = fireflower_pressed
 enemyhit_button.when_pressed = enemyhit_pressed
 
 update_outputs()
-
+# AI helped explain that pause() keeps the program running and
+# listening for button presses instead of ending immediately.
 pause()
